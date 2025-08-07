@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 垂直置中 */
+}
+.avatar {
+  display: block;
+  margin: 30px auto 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.113);
+}
+.container {
+  text-align: center;
+}
+.typewriter {
+  font-size: 24px;
+  font-family: monospace;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  color: white;
+}
+
+#text {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  animation: typing 3s steps(19, end) forwards; /* 19 字元 */
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 2px;
+  width: 1ch;
+  animation: blink 0.7s step-end infinite;
+}
+
+/* 打字動畫 */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 17ch; } /* 請根據字數自行調整 */
+}
+
+/* 游標閃爍動畫 */
+@keyframes blink {
+  50% { opacity: 0; }
+}
+h1, h2,li, p, h3,h4, a {
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+p,li, h2,h3,h4 {
+  font-size: 16px;
+  text-align: left;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
