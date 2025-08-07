@@ -53,7 +53,7 @@ body {
 @keyframes blink {
   50% { opacity: 0; }
 }
-h1, h2,li, p, h3,h4, a {
+h1, h2,li, p, h3,h4,h5, a {
   color: #ffffff;
 }
 
@@ -61,7 +61,7 @@ h1 {
   font-size: 32px;
 }
 
-p,li, h2,h3,h4 {
+p,li, h2,h3,h4,h5 {
   font-size: 16px;
   text-align: left;
 }
